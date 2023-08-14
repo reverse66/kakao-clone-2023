@@ -1,3 +1,3 @@
 # Kakao-clone-2023 update
 
-CSS got so much better.
+HTML and CSS started.
