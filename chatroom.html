@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatRoom - Kokoa Talk</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body id="chatroom">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Sevice</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-three-quarters"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <div class="alt-header">
+      <div class="alt-header__column">
+        <a href="chat.html">
+          <i class="fas fa-chevron-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Jihyo</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-2x"></i></span>
+        <span><i class="fas fa-bars fa-2x"></i></span>
+      </div>
+    </div>
+    <main class="main-screen main-chat">
+      <div class="chatroom__timetamp">Tuesday, June 30, 2023</div>
+      <div class="message-row">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo6NPU9qlSBxt0x-A9DgBOxF-Gti12xcinXA&usqp=CAU"
+        />
+        <div class="message-row__content">
+          <span class="message__author">Nai</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi!</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message__info message__info--own">
+          <span class="message__bubble">Hi nice to meet you!</span>
+          <span class="message__time">21:27</span>
+        </div>
+      </div>
+    </main>
+    <form class="reply">
+      <div class="form__column">
+        <i class="far fa-plus-square"></i>
+      </div>
+      <div class="form__column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="far fa-smile"></i>
+        <button>
+          <i class="fas fa-arrow-alt-circle-up"></i>
+        </button>
+      </div>
+    </form>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      ;
+      crossorigin="anonymous"
+      ;
+    ></script>
+  </body>
+</html>

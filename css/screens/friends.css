@@ -1,0 +1,42 @@
+#body {
+  position: relative;
+}
+#friends-display__link {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 15px 0px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#friends-display__link i {
+  color: rgba(0, 0, 0, 0.3);
+  padding-right: 10px;
+}
+#friends-display__link i:last-child {
+  padding-left: 10px;
+}
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+#splash-screen {
+  background-color: yellow;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  animation: hideSplashScreen 0.4s ease-in-out forwards;
+  animation-delay: 2s;
+}

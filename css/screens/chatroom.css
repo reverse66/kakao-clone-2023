@@ -1,0 +1,123 @@
+#chatroom {
+  background-color: #abc1d1;
+}
+#chatroom .alt-header,
+#chatroom .status-bar {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #abc1d1;
+}
+#chatroom .status-bar {
+  z-index: 2;
+}
+#chatroom .alt-header {
+  top: 10px;
+  z-index: 1;
+}
+.main-chat {
+  margin-top: 150px;
+}
+.chatroom__timetamp {
+  color: white;
+  background-color: #92a4b2;
+  padding: 15px;
+  font-size: 14px;
+  border-radius: 25px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+}
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 30%;
+  margin-right: 10px;
+}
+.message__author {
+  opacity: 0.8;
+  font-size: 13px;
+  margin-bottom: 15px;
+  display: block;
+}
+.message__info {
+  display: flex;
+  align-items: end;
+}
+.message__bubble {
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-right: 4px;
+}
+.message__time {
+  opacity: 0.8;
+  font-size: 10px;
+}
+
+.message-row--own .message__bubble {
+  background-color: yellow;
+  border-top-right-radius: 0px;
+  margin-right: 0px;
+  margin-left: 5px;
+}
+.message-row--own {
+  display: flex;
+  justify-content: end;
+}
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+  align-items: center;
+  box-sizing: border-box;
+}
+.reply .form__column:first-child {
+  width: 10%;
+}
+.reply .form__column:last-child {
+  width: 90%;
+  position: relative;
+}
+.reply i {
+  color: rgba(0, 0, 0, 0.4);
+}
+.reply input {
+  height: 30px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+.form__column:last-child > i,
+.form__column:last-child button {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  right: -3px;
+}
+.form__column:last-child > i {
+  top: 10px;
+  right: 40px;
+}
+.form__column:last-child button {
+  background-color: yellow;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.form__column button i {
+  opacity: 1;
+}
